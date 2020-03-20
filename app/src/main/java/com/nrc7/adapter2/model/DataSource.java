@@ -10,7 +10,7 @@ public class DataSource {
 
     public List<Dog> getDogs() {
         List<Dog> dogs = new ArrayList<>();
-        for (int i = 0; i < 20; i++) {
+        for (int i = 1; i <= 20; i++) {
             Dog dog = new Dog();
             dog.setName("Dog " + i);
             dog.setBreed("Breed " + i);

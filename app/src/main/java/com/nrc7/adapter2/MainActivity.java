@@ -10,5 +10,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Receta
+        getSupportFragmentManager().beginTransaction()
+                // 3 param: 1) Container 2) Fragment 3)Tag
+                .add(R.id.container, new ListFragment(), "listFragment")
+                .commit();
     }
 }
